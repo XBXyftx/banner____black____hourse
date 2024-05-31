@@ -8,6 +8,7 @@ struct Index {
 
       //置顶logo
       Column(){
+        //携程口碑榜logo
         Image($rawfile('log.png'))
           .width(200)
           .offset({y:70})
@@ -47,6 +48,18 @@ struct Index {
         .height(82)
         .position({y:160})
         .scrollBar(BarState.Off)
+
+
+        //评选规则右侧挂组件
+        Column(){
+          Text('评选规则')
+        }
+        .width(54)
+        .height(20)
+        .backgroundColor('rgba(255, 224, 208, 0.3)')
+        .borderRadius(50)
+        .position({x:'100%',y:120})
+        .offset({x:-54})
 
 
       }
