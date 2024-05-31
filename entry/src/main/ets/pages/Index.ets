@@ -132,7 +132,8 @@ struct Index {
         Row(){
 
         }
-        .width('100%')
+        .width(78)
+        .height(36)
 
       }
       .width('100%')
