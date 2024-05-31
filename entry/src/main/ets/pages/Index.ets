@@ -106,8 +106,14 @@ struct Index {
 
         //目的地选择
         Row(){
-
+          Text('口碑目的地')
+            .fontSize(16)
+            .fontColor('rgba(153, 83, 46, 1)')
         }
+        .width(163)
+        .height(36)
+        .borderRadius(36)
+        .justifyContent(FlexAlign.Center)
 
       }
       .width('100%')
