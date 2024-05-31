@@ -89,6 +89,9 @@ struct Index {
           Image($rawfile('ic_public_arrow_down_0.svg'))
             .width(12)
             .height(12)
+            .fillColor('#fff')
+            .backgroundColor('#5F2B0E')
+            .borderRadius(8)
         }
         .width(163)
         .height(36)
@@ -98,6 +101,13 @@ struct Index {
           direction:GradientDirection.Right
         })
         .justifyContent(FlexAlign.Center)
+
+
+
+        //目的地选择
+        Row(){
+
+        }
 
       }
       .width('100%')
