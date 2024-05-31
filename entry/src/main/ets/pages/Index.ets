@@ -110,7 +110,7 @@ struct Index {
             .fontSize(16)
             .fontColor('rgba(153, 83, 46, 1)')
             .fontWeight(500)
-            .lineHeight(36)
+
         }
         .width(163)
         .height(36)
