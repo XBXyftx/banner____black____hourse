@@ -80,8 +80,6 @@ struct Index {
         //城市选择组件
         Row({space:4.5}){
           Text('北京')
-            .width('100%')
-            .height('100%')
             .textAlign(TextAlign.Center)
             .fontColor('rgba(95, 43, 14, 1)')
             .fontSize(16)
@@ -99,6 +97,7 @@ struct Index {
           colors:[['rgba(255, 226, 200, 1)',0],['rgba(230, 175, 138, 1)',1]],
           direction:GradientDirection.Right
         })
+        .justifyContent(FlexAlign.Center)
 
       }
       .width('100%')
