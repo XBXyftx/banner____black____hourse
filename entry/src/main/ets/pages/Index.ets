@@ -73,6 +73,40 @@ struct Index {
       .height(264)
 
 
+
+      //城市选择及目的地
+      Row(){
+
+        //城市选择组件
+        Row({space:4.5}){
+          Text('北京')
+            .width('100%')
+            .height('100%')
+            .textAlign(TextAlign.Center)
+            .fontColor('rgba(95, 43, 14, 1)')
+            .fontSize(16)
+            .fontWeight(600)
+
+
+          Image($rawfile('ic_public_arrow_down_0.svg'))
+            .width(12)
+            .height(12)
+        }
+        .width(163)
+        .height(36)
+        .borderRadius(16)
+        .linearGradient({
+          colors:[['rgba(255, 226, 200, 1)',0],['rgba(230, 175, 138, 1)',1]],
+          direction:GradientDirection.Right
+        })
+
+      }
+      .width('100%')
+      .justifyContent(FlexAlign.SpaceBetween)
+      .padding({left:10,right:10})
+      .margin({top:24.12})
+
+
     }
     .width(360)
     .height('100%')
