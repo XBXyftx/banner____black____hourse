@@ -125,6 +125,20 @@ struct Index {
       .margin({top:24.12})
 
 
+
+      //酒店 景点 夜游 美食最外层组件
+      Row(){
+
+        Row(){
+
+        }
+        .width('100%')
+
+      }
+      .width('100%')
+
+
+
     }
     .width(360)
     .height('100%')
