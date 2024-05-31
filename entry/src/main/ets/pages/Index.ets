@@ -53,13 +53,18 @@ struct Index {
         //评选规则右侧挂组件
         Column(){
           Text('评选规则')
+            .fontSize(10)
+            .fontColor('rgba(246, 223, 200, 1)')
+            .textAlign(TextAlign.Center)
+            .width('100%')
+            .height('100%')
         }
         .width(54)
         .height(20)
         .backgroundColor('rgba(255, 224, 208, 0.3)')
         .borderRadius(50)
         .position({x:'100%',y:120})
-        .offset({x:-54})
+        .translate({x:-54})
 
 
       }
