@@ -80,10 +80,10 @@ struct Index {
         //城市选择组件
         Row({space:4.5}){
           Text('北京')
+            .textAlign(TextAlign.Center)
             .fontColor('rgba(95, 43, 14, 1)')
             .fontSize(16)
             .fontWeight(600)
-            .lineHeight(36)
 
 
           Image($rawfile('ic_public_arrow_down_0.svg'))
