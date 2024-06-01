@@ -287,6 +287,14 @@ struct Index {
       //北京环球度假区最外层
       Row(){
 
+        //左侧图片区域
+        Column(){
+          Image($rawfile('universal.png'))
+            .width(88)
+            .height(175)
+            .borderRadius(5)
+        }
+
       }
       .backgroundColor('rgba(255, 255, 255, 1)')
       .shadow({
