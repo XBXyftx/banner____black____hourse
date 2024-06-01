@@ -287,7 +287,7 @@ struct Index {
       //北京环球度假区最外层
       Row({space:8}){
 
-        //左侧图片区域
+        //北京环球度假区左侧图片区域
         Column(){
           Image($rawfile('universal.png'))
             .width(88)
@@ -321,7 +321,7 @@ struct Index {
         }
 
 
-        //右侧文字区域
+        //北京环球度假区右侧文字区域
         Column({space:6}){
 
           //北京环球度假区和收藏符号行
