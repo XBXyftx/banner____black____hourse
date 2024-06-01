@@ -411,6 +411,7 @@ struct Index {
             right:9,
             bottom:10
           })
+          .borderRadius(5)
 
 
 
