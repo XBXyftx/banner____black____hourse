@@ -173,6 +173,48 @@ struct Index {
         .alignItems(VerticalAlign.Center)
         .borderRadius(4)
 
+
+        //夜游
+        Row(){
+          Text('夜游')
+            .fontColor('rgba(0, 0, 0, 1)')
+            .fontSize(16)
+            .fontWeight(400)
+        }
+        .width(78)
+        .height(36)
+        .backgroundColor('rgba(255, 255, 255, 0.8)')
+        .shadow({
+          color:'rgba(47, 27, 14, 0.07)',
+          radius:8,
+          offsetX:1,
+          offsetY:1
+        })
+        .justifyContent(FlexAlign.Center)
+        .alignItems(VerticalAlign.Center)
+        .borderRadius(4)
+
+
+        //美食
+        Row(){
+          Text('美食')
+            .fontColor('rgba(0, 0, 0, 1)')
+            .fontSize(16)
+            .fontWeight(400)
+        }
+        .width(78)
+        .height(36)
+        .backgroundColor('rgba(255, 255, 255, 0.8)')
+        .shadow({
+          color:'rgba(47, 27, 14, 0.07)',
+          radius:8,
+          offsetX:1,
+          offsetY:1
+        })
+        .justifyContent(FlexAlign.Center)
+        .alignItems(VerticalAlign.Center)
+        .borderRadius(4)
+
       }
       .width('100%')
       .justifyContent(FlexAlign.SpaceBetween)
