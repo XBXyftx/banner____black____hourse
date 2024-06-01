@@ -285,7 +285,7 @@ struct Index {
 
 
       //北京环球度假区最外层
-      Row(){
+      Row({space:8}){
 
         //左侧图片区域
         Column(){
@@ -311,12 +311,77 @@ struct Index {
           .borderRadius(5)
           .shadow({
             radius:8,
-            color:'rgba(0, 0, 0, 0.1)',
+            color: 'rgba(98, 59, 9, 0.10)',
             offsetY:2,
+            offsetX:-2
           })
+          .justifyContent(FlexAlign.Center)
 
 
         }
+
+
+        //右侧文字区域
+        Column(){
+
+          //北京环球度假区和收藏符号行
+          Row(){
+            Text('北京环球度假区')
+              .fontColor('rgba(51, 51, 51, 1)')
+              .fontSize(16)
+              .lineHeight(20)
+              .textAlign(TextAlign.Center)
+
+            Image($rawfile('ic_xihuan.svg'))
+              .width(17.93)
+              .height(16.67)
+          }
+          .width('100%')
+          .height(20)
+          .justifyContent(FlexAlign.SpaceBetween)
+
+          //评分价格行
+          Row({space:9}){
+
+            //热度符号
+            Row(){
+              Image($rawfile('ic_huo.svg'))
+                .width(10)
+                .fillColor('#fff')
+
+              Text('10')
+                .fontSize(12)
+                .fontColor('#fff')
+
+            }
+            .padding(4)
+            .borderRadius(4)
+            .linearGradient({
+              direction: GradientDirection.Left,
+              colors: [['#FF856E', 0.1], ['#FF902A', 1.0]]
+            })
+
+            //中央文字区域 评分和评论
+            Text('4.5分 1.8w条点评')
+              .fontSize(12)
+              .fontColor('rgba(102, 102, 102, 1)')
+              .fontWeight(400)
+
+            //右侧文字
+            Text('¥308起')
+              .fontSize(12)
+              .fontColor('rgba(102, 102, 102, 1)')
+              .fontWeight(400)
+
+
+          }
+          .width('100%')
+          .justifyContent(FlexAlign.Start)
+
+
+        }
+        .width(216)
+        .height(175)
 
       }
       .backgroundColor('rgba(255, 255, 255, 1)')
