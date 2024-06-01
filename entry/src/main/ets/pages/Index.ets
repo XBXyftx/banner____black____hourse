@@ -293,6 +293,29 @@ struct Index {
             .width(88)
             .height(175)
             .borderRadius(5)
+
+          //左上角角标
+          Column(){
+            Text('No.1')
+              .fontSize(11)
+              .fontWeight(700)
+
+          }
+          .width(50)
+          .height(28.23)
+          .position({x:-4})
+          .linearGradient({
+            colors:[['rgba(234, 213, 203, 1.00)',0],['rgba(230, 178, 133, 1.00)',1]],
+            direction:GradientDirection.Right
+          })
+          .borderRadius(5)
+          .shadow({
+            radius:8,
+            color:'rgba(0, 0, 0, 0.1)',
+            offsetY:2,
+          })
+
+
         }
 
       }
