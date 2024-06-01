@@ -274,7 +274,14 @@ struct Index {
       .width('100%')
       .padding({left:12,right:9})
       .justifyContent(FlexAlign.SpaceBetween)
-      .margin({top:12})
+      .margin({top:12,bottom:12})
+
+
+
+      Text('北京近期热门景点榜')
+        .fontSize(24)
+        .fontWeight(600)
+        .fontColor('rgba(61, 26, 7, 1)')
 
 
 
