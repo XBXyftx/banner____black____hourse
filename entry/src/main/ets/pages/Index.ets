@@ -223,6 +223,25 @@ struct Index {
 
 
 
+
+      //近期热门 必打卡 滑雪 亲子 自然风光
+      Row(){
+
+        //近期热门
+        Row(){
+          Image($rawfile('ic_hot.svg'))
+            .width(17)
+            .height(17)
+            .fillColor('#CC9466')
+
+        }
+      }
+      .width('100%')
+      .padding({left:12,right:9})
+      .justifyContent(FlexAlign.SpaceBetween)
+
+
+
     }
     .width(360)
     .height('100%')
