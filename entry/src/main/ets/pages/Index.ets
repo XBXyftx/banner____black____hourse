@@ -322,7 +322,7 @@ struct Index {
 
 
         //右侧文字区域
-        Column(){
+        Column({space:6}){
 
           //北京环球度假区和收藏符号行
           Row(){
