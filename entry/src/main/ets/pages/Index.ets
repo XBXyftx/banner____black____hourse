@@ -381,19 +381,26 @@ struct Index {
 
 
           //上榜理由
-          Column(){
+          Flex({direction:FlexDirection.Row,wrap:FlexWrap.Wrap}){
 
-            Text(){
-              Span($rawfile('dianzan.png'))
-                .width(16)
-              Span('上榜理由:')
+            Image($rawfile('dianzan.png'))
+              .width(16)
+
+            Text('上榜理由:')
                 .fontSize(13)
                 .fontWeight(600)
                 .fontColor('#5f2b0e')
-              Span('这个冬天来环球影城，⼀起沉浸在冬⽇独有的浪漫，漫步在雪花⻜舞的雪天，创造专属于')
+
+            Text('这个冬天来环球影')
                 .fontColor('#5f2b0e')
                 .fontSize(13)
-            }
+
+            Text('城，一起沉浸在冬日独有的浪漫，漫步在雪花飞舞的雪天，创造专属于')
+              .fontColor('#5f2b0e')
+              .fontSize(13)
+              .maxLines(2)
+              .textOverflow({overflow:TextOverflow.Ellipsis})
+
           }
           .width(216)
           .height(72)
@@ -404,6 +411,7 @@ struct Index {
             right:9,
             bottom:10
           })
+
 
 
         }
