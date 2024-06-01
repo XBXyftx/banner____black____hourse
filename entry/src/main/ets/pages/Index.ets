@@ -284,6 +284,22 @@ struct Index {
         .fontColor('rgba(61, 26, 7, 1)')
 
 
+      //北京环球度假区最外层
+      Row(){
+
+      }
+      .backgroundColor('rgba(255, 255, 255, 1)')
+      .shadow({
+        color:'rgba(0, 0, 0, 0.1)',
+        offsetY:2,
+        offsetX:0,
+        radius:20
+      })
+      .width(336)
+      .height(199)
+      .margin({top:12})
+
+
 
     }
     .width(360)
