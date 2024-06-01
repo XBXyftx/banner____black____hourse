@@ -225,7 +225,7 @@ struct Index {
 
 
       //近期热门 必打卡 滑雪 亲子 自然风光
-      Row(){
+      Row({space:25}){
 
         //近期热门
         Row(){
@@ -234,11 +234,19 @@ struct Index {
             .height(17)
             .fillColor('#CC9466')
 
+          Text('近期热门')
+            .fontSize(14)
+            .fontColor('rgba(103, 57, 21, 1)')
+            .fontWeight(600)
+
         }
+        .width(85)
+        .height(18)
       }
       .width('100%')
       .padding({left:12,right:9})
       .justifyContent(FlexAlign.SpaceBetween)
+      .margin({top:12})
 
 
 
