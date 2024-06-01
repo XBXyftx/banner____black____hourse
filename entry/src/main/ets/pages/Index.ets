@@ -129,14 +129,55 @@ struct Index {
       //酒店 景点 夜游 美食最外层组件
       Row(){
 
+        //酒店
         Row(){
-
+          Text('酒店')
+            .fontColor('rgba(0, 0, 0, 1)')
+            .fontSize(16)
+            .fontWeight(400)
         }
         .width(78)
         .height(36)
+        .backgroundColor('rgba(255, 255, 255, 0.8)')
+        .shadow({
+          color:'rgba(47, 27, 14, 0.07)',
+          radius:8,
+          offsetX:1,
+          offsetY:1
+        })
+        .justifyContent(FlexAlign.Center)
+        .alignItems(VerticalAlign.Center)
+        .borderRadius(4)
+
+
+        //景点
+        Row(){
+          Text('景点')
+            .fontColor('rgba(255, 255, 255, 1)')
+            .fontSize(16)
+            .fontWeight(400)
+        }
+        .width(78)
+        .height(36)
+        .linearGradient({
+          colors:[['rgba(179, 109, 62, 0.8)',0],['rgba(204, 148, 102, 0.8)',1]],
+          direction:GradientDirection.Right
+        })
+        .shadow({
+          color:'rgba(47, 27, 14, 0.07)',
+          radius:8,
+          offsetX:1,
+          offsetY:1
+        })
+        .justifyContent(FlexAlign.Center)
+        .alignItems(VerticalAlign.Center)
+        .borderRadius(4)
 
       }
       .width('100%')
+      .justifyContent(FlexAlign.SpaceBetween)
+      .margin({top:24})
+      .padding({left:12,right:12})
 
 
 
