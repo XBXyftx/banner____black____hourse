@@ -383,18 +383,17 @@ struct Index {
           //上榜理由
           Column(){
 
-            Row(){
-              Image($rawfile('dianzan.png'))
+            Text(){
+              Span($rawfile('dianzan.png'))
                 .width(16)
-              Text('上榜理由:')
+              Span('上榜理由:')
                 .fontSize(13)
                 .fontWeight(600)
                 .fontColor('#5f2b0e')
-              Text('这个冬天来环球影城，⼀起沉浸在冬⽇独有的浪漫，漫步在雪花⻜舞的雪天，创造专属于')
+              Span('这个冬天来环球影城，⼀起沉浸在冬⽇独有的浪漫，漫步在雪花⻜舞的雪天，创造专属于')
                 .fontColor('#5f2b0e')
                 .fontSize(13)
             }
-
           }
           .width(216)
           .height(72)
