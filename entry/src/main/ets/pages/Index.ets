@@ -242,6 +242,34 @@ struct Index {
         }
         .width(85)
         .height(18)
+
+        //必打卡
+        Text('必打卡')
+          .fontColor('rgba(102, 102, 102, 1)')
+          .fontSize(14)
+          .fontWeight(42)
+          .height(18)
+
+        //滑雪
+        Text('滑雪')
+          .fontColor('rgba(102, 102, 102, 1)')
+          .fontSize(14)
+          .fontWeight(42)
+          .height(18)
+
+        //亲子
+        Text('亲子')
+          .fontColor('rgba(102, 102, 102, 1)')
+          .fontSize(14)
+          .fontWeight(42)
+          .height(18)
+
+        //自然风光
+        Text('自然风光')
+          .fontColor('rgba(102, 102, 102, 1)')
+          .fontSize(14)
+          .fontWeight(42)
+          .height(18)
       }
       .width('100%')
       .padding({left:12,right:9})
