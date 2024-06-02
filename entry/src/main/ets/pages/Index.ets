@@ -418,7 +418,7 @@ struct Index {
 
 
           //嗨玩乐园 游乐园 小标签行
-          Row(){
+          Row({space:4}){
 
             Row(){
               Text('嗨玩乐园')
@@ -426,6 +426,21 @@ struct Index {
                 .fontColor('rgba(153, 174, 202, 1)')
             }
             .width(48)
+            .height(17)
+            .border({
+              width:1,
+              style:BorderStyle.Solid,
+              color:'rgba(153, 174, 202, 1)',
+              radius:4
+            })
+            .justifyContent(FlexAlign.Center)
+
+            Row(){
+              Text('游乐园')
+                .fontSize(10)
+                .fontColor('rgba(153, 174, 202, 1)')
+            }
+            .width(38)
             .height(17)
             .border({
               width:1,
