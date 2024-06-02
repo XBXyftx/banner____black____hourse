@@ -416,6 +416,28 @@ struct Index {
 
 
 
+
+          //嗨玩乐园 游乐园 小标签行
+          Row(){
+
+            Row(){
+              Text('嗨玩乐园')
+            }
+            .width(48)
+            .height(17)
+            .border({
+              width:1,
+              style:BorderStyle.Solid,
+              color:'rgba(153, 174, 202, 1)',
+              radius:4
+            })
+
+          }
+          .width('100%')
+
+
+
+
         }
         .width(216)
         .height(175)
