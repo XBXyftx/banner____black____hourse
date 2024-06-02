@@ -730,7 +730,7 @@ struct Index {
       .alignListItem(ListItemAlign.Center)
 
     }
-    .width(360)
+    .width('100%')
     .height('100%')
   }
 }
