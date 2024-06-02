@@ -322,7 +322,7 @@ struct Index {
 
                 Image($rawfile('ic_xihuan.svg'))
                   .width(17.93)
-                  .height(16.67)
+
               }
               .width('100%')
               .height(20)
@@ -505,19 +505,28 @@ struct Index {
 
               //故宫博物院和收藏符号行
               Row() {
-                Text('北京环球度假区')
+                Text('故宫博物院')
                   .fontColor('rgba(51, 51, 51, 1)')
                   .fontSize(16)
                   .lineHeight(20)
                   .textAlign(TextAlign.Center)
 
+                Text('5A')
+                  .width(22)
+                  .height(16)
+                  .backgroundColor('rgba(238, 241, 246, 1)')
+                  .textAlign(TextAlign.Center)
+                  .fontSize(11)
+                  .fontColor('rgba(86, 120, 168, 1)')
+                  .margin({left:4,right:92.17})
+
                 Image($rawfile('ic_xihuan.svg'))
                   .width(17.93)
-                  .height(16.67)
+
               }
               .width('100%')
               .height(20)
-              .justifyContent(FlexAlign.SpaceBetween)
+
 
               //评分价格行
               Row({ space: 9 }) {
