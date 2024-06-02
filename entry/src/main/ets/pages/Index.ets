@@ -579,11 +579,11 @@ struct Index {
                   .fontWeight(600)
                   .fontColor('#5f2b0e')
 
-                Text('这个冬天来环球影')
+                Text('城墙建筑，院落布')
                   .fontColor('#5f2b0e')
                   .fontSize(13)
 
-                Text('城，一起沉浸在冬日独有的浪漫，漫步在雪花飞舞的雪天，创造专属于')
+                Text('局，屋脊小兽，都包含着古代人民的巧夺天工，带小朋友穿梭明清时空')
                   .fontColor('#5f2b0e')
                   .fontSize(13)
                   .maxLines(2)
