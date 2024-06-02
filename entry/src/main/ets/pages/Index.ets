@@ -446,9 +446,17 @@ struct Index {
                   .height(14)
                   .fillColor('rgba(153, 153, 153, 1)')
 
-                Text('北京 · 果园环岛/通州区   距您36.7km')
-                  .fontSize(12)
-                  .fontColor('rgba(153, 153, 153, 1)')
+                Row(){
+                  Text('北京 · 果园环岛/通州区')
+                    .fontSize(12)
+                    .fontColor('rgba(153, 153, 153, 1)')
+                  Text('距您36.7km')
+                    .fontSize(12)
+                    .fontColor('rgba(153, 153, 153, 1)')
+                }
+                .flexGrow(1)
+                .justifyContent(FlexAlign.SpaceBetween)
+
 
               }
               .width('100%')
@@ -606,12 +614,13 @@ struct Index {
               Row({ space: 4 }) {
 
                 Row() {
-                  Text('嗨玩乐园')
+                  Text('探秘展馆')
                     .fontSize(10)
+                    .height(17)
                     .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
                 }
-                .width(48)
-                .height(17)
+                .padding({left:4,right:4})
                 .border({
                   width: 1,
                   style: BorderStyle.Solid,
@@ -621,12 +630,12 @@ struct Index {
                 .justifyContent(FlexAlign.Center)
 
                 Row() {
-                  Text('游乐园')
+                  Text('文化古迹')
                     .fontSize(10)
+                    .height(17)
                     .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
                 }
-                .width(38)
-                .height(17)
                 .border({
                   width: 1,
                   style: BorderStyle.Solid,
@@ -634,6 +643,40 @@ struct Index {
                   radius: 4
                 })
                 .justifyContent(FlexAlign.Center)
+                .padding({left:4,right:4})
+
+                Row() {
+                  Text('博物馆')
+                    .fontSize(10)
+                    .height(17)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
+                }
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+                .padding({left:4,right:4})
+
+                Row() {
+                  Text('场馆展馆')
+                    .fontSize(10)
+                    .height(17)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
+                }
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+                .padding({left:4,right:4})
+
 
               }
               .width('100%')
@@ -646,9 +689,17 @@ struct Index {
                   .height(14)
                   .fillColor('rgba(153, 153, 153, 1)')
 
-                Text('北京 · 果园环岛/通州区   距您36.7km')
-                  .fontSize(12)
-                  .fontColor('rgba(153, 153, 153, 1)')
+                Row(){
+                  Text('北京 · 天安门/王府井')
+                    .fontSize(12)
+                    .fontColor('rgba(153, 153, 153, 1)')
+                  Text('距您16.5km')
+                    .fontSize(12)
+                    .fontColor('rgba(153, 153, 153, 1)')
+                }
+                .flexGrow(1)
+                .justifyContent(FlexAlign.SpaceBetween)
+
 
               }
               .width('100%')
