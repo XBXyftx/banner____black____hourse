@@ -69,7 +69,8 @@ struct Index {
       }
       .backgroundImage($rawfile('banner.png'))
       .width('100%')
-      .height(264)
+      .height(310)
+      .backgroundImageSize({width:'100%'})
 
 
       //城市选择及目的地
@@ -119,7 +120,7 @@ struct Index {
       .width('100%')
       .justifyContent(FlexAlign.SpaceBetween)
       .padding({ left: 10, right: 10 })
-      .margin({ top: 24.12 })
+      .margin({ top: 10 })
 
 
       //酒店 景点 夜游 美食最外层组件
@@ -718,6 +719,249 @@ struct Index {
           .height(199)
           .margin({ top: 12 })
         }
+
+
+
+        //八达岭长城最外层
+        ListItem() {
+          Row({ space: 8 }) {
+
+            //故宫博物院左侧图片区域
+            Column() {
+              Image($rawfile('gugong.png'))
+                .width(88)
+                .height(175)
+                .borderRadius(5)
+
+              //左上角角标
+              Column() {
+                Image($rawfile('no_icon.png'))
+                Text('No.2')
+                  .fontSize(11)
+                  .fontWeight(700)
+                  .position({ x: 12, y: 6 })
+
+              }
+              .width(50)
+              .height(28.23)
+              .position({ x: -4 })
+              .justifyContent(FlexAlign.Center)
+
+            }
+
+
+            //故宫博物院右侧文字区域
+            Column({ space: 6 }) {
+
+              //故宫博物院和收藏符号行
+              Row() {
+                Text('故宫博物院')
+                  .fontColor('rgba(51, 51, 51, 1)')
+                  .fontSize(16)
+                  .lineHeight(20)
+                  .textAlign(TextAlign.Center)
+
+                Text('5A')
+                  .width(22)
+                  .height(16)
+                  .backgroundColor('rgba(238, 241, 246, 1)')
+                  .textAlign(TextAlign.Center)
+                  .fontSize(11)
+                  .fontColor('rgba(86, 120, 168, 1)')
+                  .margin({ left: 4, right: 92.17 })
+
+                Image($rawfile('ic_xihuan.svg'))
+                  .width(17.93)
+
+              }
+              .width('100%')
+              .height(20)
+
+
+              //评分价格行
+              Row({ space: 9 }) {
+
+                //热度符号
+                Row() {
+                  Image($rawfile('ic_huo.svg'))
+                    .width(10)
+                    .fillColor('#fff')
+
+                  Text('10')
+                    .fontSize(12)
+                    .fontColor('#fff')
+
+                }
+                .padding(4)
+                .borderRadius(4)
+                .linearGradient({
+                  direction: GradientDirection.Left,
+                  colors: [['#FF856E', 0.1], ['#FF902A', 1.0]]
+                })
+
+                //中央文字区域 评分和评论
+                Text('4.8分 14.6w条点评')
+                  .fontSize(12)
+                  .fontColor('rgba(102, 102, 102, 1)')
+                  .fontWeight(400)
+
+                // //右侧文字
+                // Text('¥308起')
+                //   .fontSize(12)
+                //   .fontColor('rgba(102, 102, 102, 1)')
+                //   .fontWeight(400)
+
+
+              }
+              .width('100%')
+              .justifyContent(FlexAlign.Start)
+
+
+              //上榜理由
+              Flex({ direction: FlexDirection.Row, wrap: FlexWrap.Wrap }) {
+
+                Image($rawfile('dianzan.png'))
+                  .width(16)
+                  .translate({ y: -2 })
+
+                Text('上榜理由:')
+                  .fontSize(13)
+                  .fontWeight(600)
+                  .fontColor('#5f2b0e')
+
+                Text('城墙建筑，院落布')
+                  .fontColor('#5f2b0e')
+                  .fontSize(13)
+
+                Text('局，屋脊小兽，都包含着古代人民的巧夺天工，带小朋友穿梭明清时空')
+                  .fontColor('#5f2b0e')
+                  .fontSize(13)
+                  .maxLines(2)
+                  .textOverflow({ overflow: TextOverflow.Ellipsis })
+
+              }
+              .width(216)
+              .height(72)
+              .backgroundColor('rgba(255, 247, 241, 1)')
+              .padding({
+                top: 8,
+                left: 8,
+                right: 9,
+                bottom: 10
+              })
+              .borderRadius(5)
+
+
+              //小标签行
+              Row({ space: 4 }) {
+
+                Row() {
+                  Text('探秘展馆')
+                    .fontSize(10)
+                    .height(17)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
+                }
+                .padding({ left: 4, right: 4 })
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+
+                Row() {
+                  Text('文化古迹')
+                    .fontSize(10)
+                    .height(17)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
+                }
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+                .padding({ left: 4, right: 4 })
+
+                Row() {
+                  Text('博物馆')
+                    .fontSize(10)
+                    .height(17)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
+                }
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+                .padding({ left: 4, right: 4 })
+
+                Row() {
+                  Text('场馆展馆')
+                    .fontSize(10)
+                    .height(17)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                    .textAlign(TextAlign.Center)
+                }
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+                .padding({ left: 4, right: 4 })
+
+              }
+              .width('100%')
+
+
+              //地点 距离行
+              Row({ space: 1 }) {
+
+                Image($rawfile('daohang.svg'))
+                  .height(14)
+                  .fillColor('rgba(153, 153, 153, 1)')
+
+                Row() {
+                  Text('北京 · 天安门/王府井')
+                    .fontSize(12)
+                    .fontColor('rgba(153, 153, 153, 1)')
+                  Text('距您16.5km')
+                    .fontSize(12)
+                    .fontColor('rgba(153, 153, 153, 1)')
+                }
+                .flexGrow(1)
+                .justifyContent(FlexAlign.SpaceBetween)
+
+              }
+              .width('100%')
+              .height(16)
+
+            }
+            .width(216)
+            .height(175)
+
+          }
+          .backgroundColor('rgba(255, 255, 255, 1)')
+          .shadow({
+            color: 'rgba(0, 0, 0, 0.1)',
+            offsetY: 2,
+            offsetX: 0,
+            radius: 20
+          })
+          .width(336)
+          .height(199)
+          .margin({ top: 12 })
+        }
+
 
       }
       .listDirection(Axis.Vertical)
