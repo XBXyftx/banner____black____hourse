@@ -931,10 +931,10 @@ struct Index {
                   .fillColor('rgba(153, 153, 153, 1)')
 
                 Row() {
-                  Text('北京 · 天安门/王府井')
+                  Text('北京 · 延庆休闲度假区')
                     .fontSize(12)
                     .fontColor('rgba(153, 153, 153, 1)')
-                  Text('距您16.5km')
+                  Text('距您43.1km')
                     .fontSize(12)
                     .fontColor('rgba(153, 153, 153, 1)')
                 }
