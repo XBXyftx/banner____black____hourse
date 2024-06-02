@@ -422,6 +422,8 @@ struct Index {
 
             Row(){
               Text('嗨玩乐园')
+                .fontSize(10)
+                .fontColor('rgba(153, 174, 202, 1)')
             }
             .width(48)
             .height(17)
@@ -431,6 +433,7 @@ struct Index {
               color:'rgba(153, 174, 202, 1)',
               radius:4
             })
+            .justifyContent(FlexAlign.Center)
 
           }
           .width('100%')
