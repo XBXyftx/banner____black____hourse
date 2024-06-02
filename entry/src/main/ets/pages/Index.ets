@@ -800,16 +800,16 @@ struct Index {
                 })
 
                 //中央文字区域 评分和评论
-                Text('4.8分 14.6w条点评')
+                Text('4.7分 3.7w条点评')
                   .fontSize(12)
                   .fontColor('rgba(102, 102, 102, 1)')
                   .fontWeight(400)
 
-                // //右侧文字
-                // Text('¥308起')
-                //   .fontSize(12)
-                //   .fontColor('rgba(102, 102, 102, 1)')
-                //   .fontWeight(400)
+                //右侧文字
+                Text('¥35起')
+                  .fontSize(12)
+                  .fontColor('rgba(102, 102, 102, 1)')
+                  .fontWeight(400)
 
 
               }
@@ -829,11 +829,11 @@ struct Index {
                   .fontWeight(600)
                   .fontColor('#5f2b0e')
 
-                Text('城墙建筑，院落布')
+                Text('中国古代伟大的防御')
                   .fontColor('#5f2b0e')
                   .fontSize(13)
 
-                Text('局，屋脊小兽，都包含着古代人民的巧夺天工，带小朋友穿梭明清时空')
+                Text('工程，适合带小朋友领略奇骏险要的地势和长城磅礴恢弘的风采。')
                   .fontColor('#5f2b0e')
                   .fontSize(13)
                   .maxLines(2)
@@ -855,21 +855,21 @@ struct Index {
               //小标签行
               Row({ space: 4 }) {
 
-                Row() {
-                  Text('探秘展馆')
-                    .fontSize(10)
-                    .height(17)
-                    .fontColor('rgba(153, 174, 202, 1)')
-                    .textAlign(TextAlign.Center)
-                }
-                .padding({ left: 4, right: 4 })
-                .border({
-                  width: 1,
-                  style: BorderStyle.Solid,
-                  color: 'rgba(153, 174, 202, 1)',
-                  radius: 4
-                })
-                .justifyContent(FlexAlign.Center)
+                // Row() {
+                //   Text('探秘展馆')
+                //     .fontSize(10)
+                //     .height(17)
+                //     .fontColor('rgba(153, 174, 202, 1)')
+                //     .textAlign(TextAlign.Center)
+                // }
+                // .padding({ left: 4, right: 4 })
+                // .border({
+                //   width: 1,
+                //   style: BorderStyle.Solid,
+                //   color: 'rgba(153, 174, 202, 1)',
+                //   radius: 4
+                // })
+                // .justifyContent(FlexAlign.Center)
 
                 Row() {
                   Text('文化古迹')
@@ -887,37 +887,37 @@ struct Index {
                 .justifyContent(FlexAlign.Center)
                 .padding({ left: 4, right: 4 })
 
-                Row() {
-                  Text('博物馆')
-                    .fontSize(10)
-                    .height(17)
-                    .fontColor('rgba(153, 174, 202, 1)')
-                    .textAlign(TextAlign.Center)
-                }
-                .border({
-                  width: 1,
-                  style: BorderStyle.Solid,
-                  color: 'rgba(153, 174, 202, 1)',
-                  radius: 4
-                })
-                .justifyContent(FlexAlign.Center)
-                .padding({ left: 4, right: 4 })
-
-                Row() {
-                  Text('场馆展馆')
-                    .fontSize(10)
-                    .height(17)
-                    .fontColor('rgba(153, 174, 202, 1)')
-                    .textAlign(TextAlign.Center)
-                }
-                .border({
-                  width: 1,
-                  style: BorderStyle.Solid,
-                  color: 'rgba(153, 174, 202, 1)',
-                  radius: 4
-                })
-                .justifyContent(FlexAlign.Center)
-                .padding({ left: 4, right: 4 })
+                // Row() {
+                //   Text('博物馆')
+                //     .fontSize(10)
+                //     .height(17)
+                //     .fontColor('rgba(153, 174, 202, 1)')
+                //     .textAlign(TextAlign.Center)
+                // }
+                // .border({
+                //   width: 1,
+                //   style: BorderStyle.Solid,
+                //   color: 'rgba(153, 174, 202, 1)',
+                //   radius: 4
+                // })
+                // .justifyContent(FlexAlign.Center)
+                // .padding({ left: 4, right: 4 })
+                //
+                // Row() {
+                //   Text('场馆展馆')
+                //     .fontSize(10)
+                //     .height(17)
+                //     .fontColor('rgba(153, 174, 202, 1)')
+                //     .textAlign(TextAlign.Center)
+                // }
+                // .border({
+                //   width: 1,
+                //   style: BorderStyle.Solid,
+                //   color: 'rgba(153, 174, 202, 1)',
+                //   radius: 4
+                // })
+                // .justifyContent(FlexAlign.Center)
+                // .padding({ left: 4, right: 4 })
 
               }
               .width('100%')
