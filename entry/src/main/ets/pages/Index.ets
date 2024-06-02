@@ -726,9 +726,9 @@ struct Index {
         ListItem() {
           Row({ space: 8 }) {
 
-            //故宫博物院左侧图片区域
+            //八达岭长城左侧图片区域
             Column() {
-              Image($rawfile('gugong.png'))
+              Image($rawfile('greatwall.png'))
                 .width(88)
                 .height(175)
                 .borderRadius(5)
@@ -736,7 +736,7 @@ struct Index {
               //左上角角标
               Column() {
                 Image($rawfile('no_icon.png'))
-                Text('No.2')
+                Text('No.3')
                   .fontSize(11)
                   .fontWeight(700)
                   .position({ x: 12, y: 6 })
@@ -755,7 +755,7 @@ struct Index {
 
               //故宫博物院和收藏符号行
               Row() {
-                Text('故宫博物院')
+                Text('八达岭长城')
                   .fontColor('rgba(51, 51, 51, 1)')
                   .fontSize(16)
                   .lineHeight(20)
@@ -787,7 +787,7 @@ struct Index {
                     .width(10)
                     .fillColor('#fff')
 
-                  Text('10')
+                  Text('9.8')
                     .fontSize(12)
                     .fontColor('#fff')
 
@@ -966,7 +966,7 @@ struct Index {
       }
       .listDirection(Axis.Vertical)
       .width('100%')
-      .height(325)
+      .height(410)
       .alignListItem(ListItemAlign.Center)
 
     }
