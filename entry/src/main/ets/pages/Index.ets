@@ -1,43 +1,43 @@
 @Entry
 @Component
 struct Index {
-  build(){
+  build() {
     //根组件
-    Column(){
+    Column() {
 
 
       //置顶logo
-      Column(){
+      Column() {
         //携程口碑榜logo
         Image($rawfile('log.png'))
           .width(200)
-          .offset({y:70})
+          .offset({ y: 70 })
 
         //推荐榜单
-        List(){
-          ListItem(){
-            Column(){
+        List() {
+          ListItem() {
+            Column() {
               Image($rawfile('rank.png'))
                 .width('34%')
             }
           }
 
-          ListItem(){
-            Column(){
+          ListItem() {
+            Column() {
               Image($rawfile('hot.png'))
                 .width('34%')
             }
           }
 
-          ListItem(){
-            Column(){
+          ListItem() {
+            Column() {
               Image($rawfile('scenery.png'))
                 .width('34%')
             }
           }
 
-          ListItem(){
-            Column(){
+          ListItem() {
+            Column() {
               Image($rawfile('ski.png'))
                 .width('34%')
             }
@@ -46,12 +46,12 @@ struct Index {
         }
         .listDirection(Axis.Horizontal)
         .height(82)
-        .position({y:160})
+        .position({ y: 160 })
         .scrollBar(BarState.Off)
 
 
         //评选规则右侧挂组件
-        Column(){
+        Column() {
           Text('评选规则')
             .fontSize(10)
             .fontColor('rgba(246, 223, 200, 1)')
@@ -63,9 +63,8 @@ struct Index {
         .height(20)
         .backgroundColor('rgba(255, 224, 208, 0.3)')
         .borderRadius(50)
-        .position({x:'100%',y:120})
-        .translate({x:-54})
-
+        .position({ x: '100%', y: 120 })
+        .translate({ x: -54 })
 
       }
       .backgroundImage($rawfile('banner.png'))
@@ -73,12 +72,11 @@ struct Index {
       .height(264)
 
 
-
       //城市选择及目的地
-      Row(){
+      Row() {
 
         //城市选择组件
-        Row({space:4.5}){
+        Row({ space: 4.5 }) {
           Text('北京')
             .textAlign(TextAlign.Center)
             .fontColor('rgba(95, 43, 14, 1)')
@@ -97,15 +95,14 @@ struct Index {
         .height(36)
         .borderRadius(16)
         .linearGradient({
-          colors:[['rgba(255, 226, 200, 1)',0],['rgba(230, 175, 138, 1)',1]],
-          direction:GradientDirection.Right
+          colors: [['rgba(255, 226, 200, 1)', 0], ['rgba(230, 175, 138, 1)', 1]],
+          direction: GradientDirection.Right
         })
         .justifyContent(FlexAlign.Center)
 
 
-
         //目的地选择
-        Row(){
+        Row() {
           Text('口碑目的地')
             .fontSize(16)
             .fontColor('rgba(153, 83, 46, 1)')
@@ -121,16 +118,15 @@ struct Index {
       }
       .width('100%')
       .justifyContent(FlexAlign.SpaceBetween)
-      .padding({left:10,right:10})
-      .margin({top:24.12})
-
+      .padding({ left: 10, right: 10 })
+      .margin({ top: 24.12 })
 
 
       //酒店 景点 夜游 美食最外层组件
-      Row(){
+      Row() {
 
         //酒店
-        Row(){
+        Row() {
           Text('酒店')
             .fontColor('rgba(0, 0, 0, 1)')
             .fontSize(16)
@@ -140,10 +136,10 @@ struct Index {
         .height(36)
         .backgroundColor('rgba(255, 255, 255, 0.8)')
         .shadow({
-          color:'rgba(47, 27, 14, 0.07)',
-          radius:8,
-          offsetX:1,
-          offsetY:1
+          color: 'rgba(47, 27, 14, 0.07)',
+          radius: 8,
+          offsetX: 1,
+          offsetY: 1
         })
         .justifyContent(FlexAlign.Center)
         .alignItems(VerticalAlign.Center)
@@ -151,7 +147,7 @@ struct Index {
 
 
         //景点
-        Row(){
+        Row() {
           Text('景点')
             .fontColor('rgba(255, 255, 255, 1)')
             .fontSize(16)
@@ -160,14 +156,14 @@ struct Index {
         .width(78)
         .height(36)
         .linearGradient({
-          colors:[['rgba(179, 109, 62, 0.8)',0],['rgba(204, 148, 102, 0.8)',1]],
-          direction:GradientDirection.Right
+          colors: [['rgba(179, 109, 62, 0.8)', 0], ['rgba(204, 148, 102, 0.8)', 1]],
+          direction: GradientDirection.Right
         })
         .shadow({
-          color:'rgba(47, 27, 14, 0.07)',
-          radius:8,
-          offsetX:1,
-          offsetY:1
+          color: 'rgba(47, 27, 14, 0.07)',
+          radius: 8,
+          offsetX: 1,
+          offsetY: 1
         })
         .justifyContent(FlexAlign.Center)
         .alignItems(VerticalAlign.Center)
@@ -175,7 +171,7 @@ struct Index {
 
 
         //夜游
-        Row(){
+        Row() {
           Text('夜游')
             .fontColor('rgba(0, 0, 0, 1)')
             .fontSize(16)
@@ -185,10 +181,10 @@ struct Index {
         .height(36)
         .backgroundColor('rgba(255, 255, 255, 0.8)')
         .shadow({
-          color:'rgba(47, 27, 14, 0.07)',
-          radius:8,
-          offsetX:1,
-          offsetY:1
+          color: 'rgba(47, 27, 14, 0.07)',
+          radius: 8,
+          offsetX: 1,
+          offsetY: 1
         })
         .justifyContent(FlexAlign.Center)
         .alignItems(VerticalAlign.Center)
@@ -196,7 +192,7 @@ struct Index {
 
 
         //美食
-        Row(){
+        Row() {
           Text('美食')
             .fontColor('rgba(0, 0, 0, 1)')
             .fontSize(16)
@@ -206,10 +202,10 @@ struct Index {
         .height(36)
         .backgroundColor('rgba(255, 255, 255, 0.8)')
         .shadow({
-          color:'rgba(47, 27, 14, 0.07)',
-          radius:8,
-          offsetX:1,
-          offsetY:1
+          color: 'rgba(47, 27, 14, 0.07)',
+          radius: 8,
+          offsetX: 1,
+          offsetY: 1
         })
         .justifyContent(FlexAlign.Center)
         .alignItems(VerticalAlign.Center)
@@ -218,17 +214,15 @@ struct Index {
       }
       .width('100%')
       .justifyContent(FlexAlign.SpaceBetween)
-      .margin({top:24})
-      .padding({left:12,right:12})
-
-
+      .margin({ top: 24 })
+      .padding({ left: 12, right: 12 })
 
 
       //近期热门 必打卡 滑雪 亲子 自然风光
-      Row({space:25}){
+      Row({ space: 25 }) {
 
         //近期热门
-        Row(){
+        Row() {
           Image($rawfile('ic_hot.svg'))
             .width(17)
             .height(17)
@@ -272,10 +266,9 @@ struct Index {
           .height(18)
       }
       .width('100%')
-      .padding({left:12,right:9})
+      .padding({ left: 12, right: 9 })
       .justifyContent(FlexAlign.SpaceBetween)
-      .margin({top:12,bottom:12})
-
+      .margin({ top: 12, bottom: 12 })
 
 
       Text('北京近期热门景点榜')
@@ -284,195 +277,189 @@ struct Index {
         .fontColor('rgba(61, 26, 7, 1)')
 
 
-      //北京环球度假区最外层
-      Row({space:8}){
+      //榜单列表
+      Scroll() {
+        //北京环球度假区最外层
+        Row({ space: 8 }) {
 
-        //北京环球度假区左侧图片区域
-        Column(){
-          Image($rawfile('universal.png'))
-            .width(88)
-            .height(175)
-            .borderRadius(5)
+          //北京环球度假区左侧图片区域
+          Column() {
+            Image($rawfile('universal.png'))
+              .width(88)
+              .height(175)
+              .borderRadius(5)
 
-          //左上角角标
-          Column(){
-            Text('No.1')
-              .fontSize(11)
-              .fontWeight(700)
-
-          }
-          .width(50)
-          .height(28.23)
-          .position({x:-4})
-          .linearGradient({
-            colors:[['rgba(234, 213, 203, 1.00)',0],['rgba(230, 178, 133, 1.00)',1]],
-            direction:GradientDirection.Right
-          })
-          .borderRadius(5)
-          .shadow({
-            radius:8,
-            color: 'rgba(98, 59, 9, 0.10)',
-            offsetY:2,
-            offsetX:-2
-          })
-          .justifyContent(FlexAlign.Center)
-
-
-        }
-
-
-        //北京环球度假区右侧文字区域
-        Column({space:6}){
-
-          //北京环球度假区和收藏符号行
-          Row(){
-            Text('北京环球度假区')
-              .fontColor('rgba(51, 51, 51, 1)')
-              .fontSize(16)
-              .lineHeight(20)
-              .textAlign(TextAlign.Center)
-
-            Image($rawfile('ic_xihuan.svg'))
-              .width(17.93)
-              .height(16.67)
-          }
-          .width('100%')
-          .height(20)
-          .justifyContent(FlexAlign.SpaceBetween)
-
-          //评分价格行
-          Row({space:9}){
-
-            //热度符号
-            Row(){
-              Image($rawfile('ic_huo.svg'))
-                .width(10)
-                .fillColor('#fff')
-
-              Text('10')
-                .fontSize(12)
-                .fontColor('#fff')
+            //左上角角标
+            Column() {
+              Text('No.1')
+                .fontSize(11)
+                .fontWeight(700)
 
             }
-            .padding(4)
-            .borderRadius(4)
+            .width(50)
+            .height(28.23)
+            .position({ x: -4 })
             .linearGradient({
-              direction: GradientDirection.Left,
-              colors: [['#FF856E', 0.1], ['#FF902A', 1.0]]
+              colors: [['rgba(234, 213, 203, 1.00)', 0], ['rgba(230, 178, 133, 1.00)', 1]],
+              direction: GradientDirection.Right
             })
-
-            //中央文字区域 评分和评论
-            Text('4.5分 1.8w条点评')
-              .fontSize(12)
-              .fontColor('rgba(102, 102, 102, 1)')
-              .fontWeight(400)
-
-            //右侧文字
-            Text('¥308起')
-              .fontSize(12)
-              .fontColor('rgba(102, 102, 102, 1)')
-              .fontWeight(400)
-
+            .borderRadius(5)
+            .shadow({
+              radius: 8,
+              color: 'rgba(98, 59, 9, 0.10)',
+              offsetY: 2,
+              offsetX: -2
+            })
+            .justifyContent(FlexAlign.Center)
 
           }
-          .width('100%')
-          .justifyContent(FlexAlign.Start)
 
 
+          //北京环球度假区右侧文字区域
+          Column({ space: 6 }) {
 
-          //上榜理由
-          Flex({direction:FlexDirection.Row,wrap:FlexWrap.Wrap}){
+            //北京环球度假区和收藏符号行
+            Row() {
+              Text('北京环球度假区')
+                .fontColor('rgba(51, 51, 51, 1)')
+                .fontSize(16)
+                .lineHeight(20)
+                .textAlign(TextAlign.Center)
 
-            Image($rawfile('dianzan.png'))
-              .width(16)
-              .translate({y:-2})
+              Image($rawfile('ic_xihuan.svg'))
+                .width(17.93)
+                .height(16.67)
+            }
+            .width('100%')
+            .height(20)
+            .justifyContent(FlexAlign.SpaceBetween)
 
-            Text('上榜理由:')
+            //评分价格行
+            Row({ space: 9 }) {
+
+              //热度符号
+              Row() {
+                Image($rawfile('ic_huo.svg'))
+                  .width(10)
+                  .fillColor('#fff')
+
+                Text('10')
+                  .fontSize(12)
+                  .fontColor('#fff')
+
+              }
+              .padding(4)
+              .borderRadius(4)
+              .linearGradient({
+                direction: GradientDirection.Left,
+                colors: [['#FF856E', 0.1], ['#FF902A', 1.0]]
+              })
+
+              //中央文字区域 评分和评论
+              Text('4.5分 1.8w条点评')
+                .fontSize(12)
+                .fontColor('rgba(102, 102, 102, 1)')
+                .fontWeight(400)
+
+              //右侧文字
+              Text('¥308起')
+                .fontSize(12)
+                .fontColor('rgba(102, 102, 102, 1)')
+                .fontWeight(400)
+
+
+            }
+            .width('100%')
+            .justifyContent(FlexAlign.Start)
+
+
+            //上榜理由
+            Flex({ direction: FlexDirection.Row, wrap: FlexWrap.Wrap }) {
+
+              Image($rawfile('dianzan.png'))
+                .width(16)
+                .translate({ y: -2 })
+
+              Text('上榜理由:')
                 .fontSize(13)
                 .fontWeight(600)
                 .fontColor('#5f2b0e')
 
-            Text('这个冬天来环球影')
+              Text('这个冬天来环球影')
                 .fontColor('#5f2b0e')
                 .fontSize(13)
 
-            Text('城，一起沉浸在冬日独有的浪漫，漫步在雪花飞舞的雪天，创造专属于')
-              .fontColor('#5f2b0e')
-              .fontSize(13)
-              .maxLines(2)
-              .textOverflow({overflow:TextOverflow.Ellipsis})
+              Text('城，一起沉浸在冬日独有的浪漫，漫步在雪花飞舞的雪天，创造专属于')
+                .fontColor('#5f2b0e')
+                .fontSize(13)
+                .maxLines(2)
+                .textOverflow({ overflow: TextOverflow.Ellipsis })
+
+            }
+            .width(216)
+            .height(72)
+            .backgroundColor('rgba(255, 247, 241, 1)')
+            .padding({
+              top: 8,
+              left: 8,
+              right: 9,
+              bottom: 10
+            })
+            .borderRadius(5)
+
+
+            //嗨玩乐园 游乐园 小标签行
+            Row({ space: 4 }) {
+
+              Row() {
+                Text('嗨玩乐园')
+                  .fontSize(10)
+                  .fontColor('rgba(153, 174, 202, 1)')
+              }
+              .width(48)
+              .height(17)
+              .border({
+                width: 1,
+                style: BorderStyle.Solid,
+                color: 'rgba(153, 174, 202, 1)',
+                radius: 4
+              })
+              .justifyContent(FlexAlign.Center)
+
+              Row() {
+                Text('游乐园')
+                  .fontSize(10)
+                  .fontColor('rgba(153, 174, 202, 1)')
+              }
+              .width(38)
+              .height(17)
+              .border({
+                width: 1,
+                style: BorderStyle.Solid,
+                color: 'rgba(153, 174, 202, 1)',
+                radius: 4
+              })
+              .justifyContent(FlexAlign.Center)
+
+            }
+            .width('100%')
 
           }
           .width(216)
-          .height(72)
-          .backgroundColor('rgba(255, 247, 241, 1)')
-          .padding({
-            top:8,
-            left:8,
-            right:9,
-            bottom:10
-          })
-          .borderRadius(5)
-
-
-
-
-          //嗨玩乐园 游乐园 小标签行
-          Row({space:4}){
-
-            Row(){
-              Text('嗨玩乐园')
-                .fontSize(10)
-                .fontColor('rgba(153, 174, 202, 1)')
-            }
-            .width(48)
-            .height(17)
-            .border({
-              width:1,
-              style:BorderStyle.Solid,
-              color:'rgba(153, 174, 202, 1)',
-              radius:4
-            })
-            .justifyContent(FlexAlign.Center)
-
-            Row(){
-              Text('游乐园')
-                .fontSize(10)
-                .fontColor('rgba(153, 174, 202, 1)')
-            }
-            .width(38)
-            .height(17)
-            .border({
-              width:1,
-              style:BorderStyle.Solid,
-              color:'rgba(153, 174, 202, 1)',
-              radius:4
-            })
-            .justifyContent(FlexAlign.Center)
-
-          }
-          .width('100%')
-
-
-
+          .height(175)
 
         }
-        .width(216)
-        .height(175)
-
+        .backgroundColor('rgba(255, 255, 255, 1)')
+        .shadow({
+          color: 'rgba(0, 0, 0, 0.1)',
+          offsetY: 2,
+          offsetX: 0,
+          radius: 20
+        })
+        .width(336)
+        .height(199)
+        .margin({ top: 12 })
       }
-      .backgroundColor('rgba(255, 255, 255, 1)')
-      .shadow({
-        color:'rgba(0, 0, 0, 0.1)',
-        offsetY:2,
-        offsetX:0,
-        radius:20
-      })
-      .width(336)
-      .height(199)
-      .margin({top:12})
-
-
 
     }
     .width(360)
