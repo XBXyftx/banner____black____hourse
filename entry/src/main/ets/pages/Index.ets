@@ -460,6 +460,9 @@ struct Index {
         .height(199)
         .margin({ top: 12 })
       }
+      .scrollable(ScrollDirection.Vertical)
+      .scrollBar(BarState.Off)
+      .width('100%')
 
     }
     .width(360)
