@@ -550,16 +550,16 @@ struct Index {
                 })
 
                 //中央文字区域 评分和评论
-                Text('4.5分 1.8w条点评')
+                Text('4.8分 14.6w条点评')
                   .fontSize(12)
                   .fontColor('rgba(102, 102, 102, 1)')
                   .fontWeight(400)
 
-                //右侧文字
-                Text('¥308起')
-                  .fontSize(12)
-                  .fontColor('rgba(102, 102, 102, 1)')
-                  .fontWeight(400)
+                // //右侧文字
+                // Text('¥308起')
+                //   .fontSize(12)
+                //   .fontColor('rgba(102, 102, 102, 1)')
+                //   .fontWeight(400)
 
 
               }
