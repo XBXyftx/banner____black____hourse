@@ -298,7 +298,7 @@ struct Index {
                 Text('No.1')
                   .fontSize(11)
                   .fontWeight(700)
-                  .position({x:12,y:6})
+                  .position({ x: 12, y: 6 })
 
               }
               .width(50)
@@ -446,7 +446,7 @@ struct Index {
                   .height(14)
                   .fillColor('rgba(153, 153, 153, 1)')
 
-                Row(){
+                Row() {
                   Text('北京 · 果园环岛/通州区')
                     .fontSize(12)
                     .fontColor('rgba(153, 153, 153, 1)')
@@ -456,7 +456,6 @@ struct Index {
                 }
                 .flexGrow(1)
                 .justifyContent(FlexAlign.SpaceBetween)
-
 
               }
               .width('100%')
@@ -481,7 +480,7 @@ struct Index {
 
 
         //故宫博物院最外层
-        ListItem(){
+        ListItem() {
           Row({ space: 8 }) {
 
             //故宫博物院左侧图片区域
@@ -497,7 +496,7 @@ struct Index {
                 Text('No.2')
                   .fontSize(11)
                   .fontWeight(700)
-                  .position({x:12,y:6})
+                  .position({ x: 12, y: 6 })
 
               }
               .width(50)
@@ -526,7 +525,7 @@ struct Index {
                   .textAlign(TextAlign.Center)
                   .fontSize(11)
                   .fontColor('rgba(86, 120, 168, 1)')
-                  .margin({left:4,right:92.17})
+                  .margin({ left: 4, right: 92.17 })
 
                 Image($rawfile('ic_xihuan.svg'))
                   .width(17.93)
@@ -620,7 +619,7 @@ struct Index {
                     .fontColor('rgba(153, 174, 202, 1)')
                     .textAlign(TextAlign.Center)
                 }
-                .padding({left:4,right:4})
+                .padding({ left: 4, right: 4 })
                 .border({
                   width: 1,
                   style: BorderStyle.Solid,
@@ -643,7 +642,7 @@ struct Index {
                   radius: 4
                 })
                 .justifyContent(FlexAlign.Center)
-                .padding({left:4,right:4})
+                .padding({ left: 4, right: 4 })
 
                 Row() {
                   Text('博物馆')
@@ -659,7 +658,7 @@ struct Index {
                   radius: 4
                 })
                 .justifyContent(FlexAlign.Center)
-                .padding({left:4,right:4})
+                .padding({ left: 4, right: 4 })
 
                 Row() {
                   Text('场馆展馆')
@@ -675,8 +674,7 @@ struct Index {
                   radius: 4
                 })
                 .justifyContent(FlexAlign.Center)
-                .padding({left:4,right:4})
-
+                .padding({ left: 4, right: 4 })
 
               }
               .width('100%')
@@ -689,7 +687,7 @@ struct Index {
                   .height(14)
                   .fillColor('rgba(153, 153, 153, 1)')
 
-                Row(){
+                Row() {
                   Text('北京 · 天安门/王府井')
                     .fontSize(12)
                     .fontColor('rgba(153, 153, 153, 1)')
@@ -699,7 +697,6 @@ struct Index {
                 }
                 .flexGrow(1)
                 .justifyContent(FlexAlign.SpaceBetween)
-
 
               }
               .width('100%')
@@ -721,7 +718,6 @@ struct Index {
           .height(199)
           .margin({ top: 12 })
         }
-
 
       }
       .listDirection(Axis.Vertical)
