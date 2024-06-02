@@ -478,7 +478,7 @@ struct Index {
 
             //故宫博物院左侧图片区域
             Column() {
-              Image($rawfile('universal.png'))
+              Image($rawfile('gugong.png'))
                 .width(88)
                 .height(175)
                 .borderRadius(5)
@@ -486,7 +486,7 @@ struct Index {
               //左上角角标
               Column() {
                 Image($rawfile('no_icon.png'))
-                Text('No.1')
+                Text('No.2')
                   .fontSize(11)
                   .fontWeight(700)
                   .position({x:12,y:6})
