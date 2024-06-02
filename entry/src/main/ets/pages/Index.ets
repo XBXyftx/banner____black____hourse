@@ -448,9 +448,15 @@ struct Index {
 
 
             //地点 距离行
-            Row(){
+            Row({space:1}){
 
-              // Image($rawfile(''))
+              Image($rawfile('daohang.svg'))
+                .height(14)
+                .fillColor('rgba(153, 153, 153, 1)')
+
+              Text('北京 · 果园环岛/通州区   距您36.7km')
+                .fontSize(12)
+                .fontColor('rgba(153, 153, 153, 1)')
 
             }
             .width('100%')
