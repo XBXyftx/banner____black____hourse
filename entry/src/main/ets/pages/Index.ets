@@ -385,6 +385,7 @@ struct Index {
 
             Image($rawfile('dianzan.png'))
               .width(16)
+              .translate({y:-2})
 
             Text('上榜理由:')
                 .fontSize(13)
