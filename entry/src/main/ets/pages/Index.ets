@@ -444,6 +444,20 @@ struct Index {
             }
             .width('100%')
 
+
+
+
+            //地点 距离行
+            Row(){
+
+              // Image($rawfile(''))
+
+            }
+            .width('100%')
+            .height(16)
+
+
+
           }
           .width(216)
           .height(175)
