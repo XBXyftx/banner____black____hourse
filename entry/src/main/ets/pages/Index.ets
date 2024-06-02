@@ -485,25 +485,16 @@ struct Index {
 
               //左上角角标
               Column() {
+                Image($rawfile('no_icon.png'))
                 Text('No.1')
                   .fontSize(11)
                   .fontWeight(700)
+                  .position({x:12,y:6})
 
               }
               .width(50)
               .height(28.23)
               .position({ x: -4 })
-              .linearGradient({
-                colors: [['rgba(234, 213, 203, 1.00)', 0], ['rgba(230, 178, 133, 1.00)', 1]],
-                direction: GradientDirection.Right
-              })
-              .borderRadius(5)
-              .shadow({
-                radius: 8,
-                color: 'rgba(98, 59, 9, 0.10)',
-                offsetY: 2,
-                offsetX: -2
-              })
               .justifyContent(FlexAlign.Center)
 
             }
