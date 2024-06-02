@@ -278,211 +278,405 @@ struct Index {
 
 
       //榜单列表
-      Scroll() {
+      List() {
+
+
         //北京环球度假区最外层
-        Row({ space: 8 }) {
+        ListItem() {
+          Row({ space: 8 }) {
 
-          //北京环球度假区左侧图片区域
-          Column() {
-            Image($rawfile('universal.png'))
-              .width(88)
-              .height(175)
-              .borderRadius(5)
-
-            //左上角角标
+            //北京环球度假区左侧图片区域
             Column() {
-              Text('No.1')
-                .fontSize(11)
-                .fontWeight(700)
+              Image($rawfile('universal.png'))
+                .width(88)
+                .height(175)
+                .borderRadius(5)
 
-            }
-            .width(50)
-            .height(28.23)
-            .position({ x: -4 })
-            .linearGradient({
-              colors: [['rgba(234, 213, 203, 1.00)', 0], ['rgba(230, 178, 133, 1.00)', 1]],
-              direction: GradientDirection.Right
-            })
-            .borderRadius(5)
-            .shadow({
-              radius: 8,
-              color: 'rgba(98, 59, 9, 0.10)',
-              offsetY: 2,
-              offsetX: -2
-            })
-            .justifyContent(FlexAlign.Center)
-
-          }
-
-
-          //北京环球度假区右侧文字区域
-          Column({ space: 6 }) {
-
-            //北京环球度假区和收藏符号行
-            Row() {
-              Text('北京环球度假区')
-                .fontColor('rgba(51, 51, 51, 1)')
-                .fontSize(16)
-                .lineHeight(20)
-                .textAlign(TextAlign.Center)
-
-              Image($rawfile('ic_xihuan.svg'))
-                .width(17.93)
-                .height(16.67)
-            }
-            .width('100%')
-            .height(20)
-            .justifyContent(FlexAlign.SpaceBetween)
-
-            //评分价格行
-            Row({ space: 9 }) {
-
-              //热度符号
-              Row() {
-                Image($rawfile('ic_huo.svg'))
-                  .width(10)
-                  .fillColor('#fff')
-
-                Text('10')
-                  .fontSize(12)
-                  .fontColor('#fff')
+              //左上角角标
+              Column() {
+                Image($rawfile('no_icon.png'))
+                Text('No.1')
+                  .fontSize(11)
+                  .fontWeight(700)
+                  .position({x:12,y:6})
 
               }
-              .padding(4)
-              .borderRadius(4)
-              .linearGradient({
-                direction: GradientDirection.Left,
-                colors: [['#FF856E', 0.1], ['#FF902A', 1.0]]
-              })
-
-              //中央文字区域 评分和评论
-              Text('4.5分 1.8w条点评')
-                .fontSize(12)
-                .fontColor('rgba(102, 102, 102, 1)')
-                .fontWeight(400)
-
-              //右侧文字
-              Text('¥308起')
-                .fontSize(12)
-                .fontColor('rgba(102, 102, 102, 1)')
-                .fontWeight(400)
-
+              .width(50)
+              .height(28.23)
+              .position({ x: -4 })
+              .justifyContent(FlexAlign.Center)
 
             }
-            .width('100%')
-            .justifyContent(FlexAlign.Start)
 
 
-            //上榜理由
-            Flex({ direction: FlexDirection.Row, wrap: FlexWrap.Wrap }) {
+            //北京环球度假区右侧文字区域
+            Column({ space: 6 }) {
 
-              Image($rawfile('dianzan.png'))
-                .width(16)
-                .translate({ y: -2 })
+              //北京环球度假区和收藏符号行
+              Row() {
+                Text('北京环球度假区')
+                  .fontColor('rgba(51, 51, 51, 1)')
+                  .fontSize(16)
+                  .lineHeight(20)
+                  .textAlign(TextAlign.Center)
 
-              Text('上榜理由:')
-                .fontSize(13)
-                .fontWeight(600)
-                .fontColor('#5f2b0e')
+                Image($rawfile('ic_xihuan.svg'))
+                  .width(17.93)
+                  .height(16.67)
+              }
+              .width('100%')
+              .height(20)
+              .justifyContent(FlexAlign.SpaceBetween)
 
-              Text('这个冬天来环球影')
-                .fontColor('#5f2b0e')
-                .fontSize(13)
+              //评分价格行
+              Row({ space: 9 }) {
 
-              Text('城，一起沉浸在冬日独有的浪漫，漫步在雪花飞舞的雪天，创造专属于')
-                .fontColor('#5f2b0e')
-                .fontSize(13)
-                .maxLines(2)
-                .textOverflow({ overflow: TextOverflow.Ellipsis })
+                //热度符号
+                Row() {
+                  Image($rawfile('ic_huo.svg'))
+                    .width(10)
+                    .fillColor('#fff')
+
+                  Text('10')
+                    .fontSize(12)
+                    .fontColor('#fff')
+
+                }
+                .padding(4)
+                .borderRadius(4)
+                .linearGradient({
+                  direction: GradientDirection.Left,
+                  colors: [['#FF856E', 0.1], ['#FF902A', 1.0]]
+                })
+
+                //中央文字区域 评分和评论
+                Text('4.5分 1.8w条点评')
+                  .fontSize(12)
+                  .fontColor('rgba(102, 102, 102, 1)')
+                  .fontWeight(400)
+
+                //右侧文字
+                Text('¥308起')
+                  .fontSize(12)
+                  .fontColor('rgba(102, 102, 102, 1)')
+                  .fontWeight(400)
+
+
+              }
+              .width('100%')
+              .justifyContent(FlexAlign.Start)
+
+
+              //上榜理由
+              Flex({ direction: FlexDirection.Row, wrap: FlexWrap.Wrap }) {
+
+                Image($rawfile('dianzan.png'))
+                  .width(16)
+                  .translate({ y: -2 })
+
+                Text('上榜理由:')
+                  .fontSize(13)
+                  .fontWeight(600)
+                  .fontColor('#5f2b0e')
+
+                Text('这个冬天来环球影')
+                  .fontColor('#5f2b0e')
+                  .fontSize(13)
+
+                Text('城，一起沉浸在冬日独有的浪漫，漫步在雪花飞舞的雪天，创造专属于')
+                  .fontColor('#5f2b0e')
+                  .fontSize(13)
+                  .maxLines(2)
+                  .textOverflow({ overflow: TextOverflow.Ellipsis })
+
+              }
+              .width(216)
+              .height(72)
+              .backgroundColor('rgba(255, 247, 241, 1)')
+              .padding({
+                top: 8,
+                left: 8,
+                right: 9,
+                bottom: 10
+              })
+              .borderRadius(5)
+
+
+              //嗨玩乐园 游乐园 小标签行
+              Row({ space: 4 }) {
+
+                Row() {
+                  Text('嗨玩乐园')
+                    .fontSize(10)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                }
+                .width(48)
+                .height(17)
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+
+                Row() {
+                  Text('游乐园')
+                    .fontSize(10)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                }
+                .width(38)
+                .height(17)
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+
+              }
+              .width('100%')
+
+
+              //地点 距离行
+              Row({ space: 1 }) {
+
+                Image($rawfile('daohang.svg'))
+                  .height(14)
+                  .fillColor('rgba(153, 153, 153, 1)')
+
+                Text('北京 · 果园环岛/通州区   距您36.7km')
+                  .fontSize(12)
+                  .fontColor('rgba(153, 153, 153, 1)')
+
+              }
+              .width('100%')
+              .height(16)
 
             }
             .width(216)
-            .height(72)
-            .backgroundColor('rgba(255, 247, 241, 1)')
-            .padding({
-              top: 8,
-              left: 8,
-              right: 9,
-              bottom: 10
-            })
-            .borderRadius(5)
-
-
-            //嗨玩乐园 游乐园 小标签行
-            Row({ space: 4 }) {
-
-              Row() {
-                Text('嗨玩乐园')
-                  .fontSize(10)
-                  .fontColor('rgba(153, 174, 202, 1)')
-              }
-              .width(48)
-              .height(17)
-              .border({
-                width: 1,
-                style: BorderStyle.Solid,
-                color: 'rgba(153, 174, 202, 1)',
-                radius: 4
-              })
-              .justifyContent(FlexAlign.Center)
-
-              Row() {
-                Text('游乐园')
-                  .fontSize(10)
-                  .fontColor('rgba(153, 174, 202, 1)')
-              }
-              .width(38)
-              .height(17)
-              .border({
-                width: 1,
-                style: BorderStyle.Solid,
-                color: 'rgba(153, 174, 202, 1)',
-                radius: 4
-              })
-              .justifyContent(FlexAlign.Center)
-
-            }
-            .width('100%')
-
-
-
-
-            //地点 距离行
-            Row({space:1}){
-
-              Image($rawfile('daohang.svg'))
-                .height(14)
-                .fillColor('rgba(153, 153, 153, 1)')
-
-              Text('北京 · 果园环岛/通州区   距您36.7km')
-                .fontSize(12)
-                .fontColor('rgba(153, 153, 153, 1)')
-
-            }
-            .width('100%')
-            .height(16)
-
-
+            .height(175)
 
           }
-          .width(216)
-          .height(175)
-
+          .backgroundColor('rgba(255, 255, 255, 1)')
+          .shadow({
+            color: 'rgba(0, 0, 0, 0.1)',
+            offsetY: 2,
+            offsetX: 0,
+            radius: 20
+          })
+          .width(336)
+          .height(199)
+          .margin({ top: 12 })
         }
-        .backgroundColor('rgba(255, 255, 255, 1)')
-        .shadow({
-          color: 'rgba(0, 0, 0, 0.1)',
-          offsetY: 2,
-          offsetX: 0,
-          radius: 20
-        })
-        .width(336)
-        .height(199)
-        .margin({ top: 12 })
+
+
+        //故宫博物院最外层
+        ListItem(){
+          Row({ space: 8 }) {
+
+            //故宫博物院左侧图片区域
+            Column() {
+              Image($rawfile('universal.png'))
+                .width(88)
+                .height(175)
+                .borderRadius(5)
+
+              //左上角角标
+              Column() {
+                Text('No.1')
+                  .fontSize(11)
+                  .fontWeight(700)
+
+              }
+              .width(50)
+              .height(28.23)
+              .position({ x: -4 })
+              .linearGradient({
+                colors: [['rgba(234, 213, 203, 1.00)', 0], ['rgba(230, 178, 133, 1.00)', 1]],
+                direction: GradientDirection.Right
+              })
+              .borderRadius(5)
+              .shadow({
+                radius: 8,
+                color: 'rgba(98, 59, 9, 0.10)',
+                offsetY: 2,
+                offsetX: -2
+              })
+              .justifyContent(FlexAlign.Center)
+
+            }
+
+
+            //故宫博物院右侧文字区域
+            Column({ space: 6 }) {
+
+              //故宫博物院和收藏符号行
+              Row() {
+                Text('北京环球度假区')
+                  .fontColor('rgba(51, 51, 51, 1)')
+                  .fontSize(16)
+                  .lineHeight(20)
+                  .textAlign(TextAlign.Center)
+
+                Image($rawfile('ic_xihuan.svg'))
+                  .width(17.93)
+                  .height(16.67)
+              }
+              .width('100%')
+              .height(20)
+              .justifyContent(FlexAlign.SpaceBetween)
+
+              //评分价格行
+              Row({ space: 9 }) {
+
+                //热度符号
+                Row() {
+                  Image($rawfile('ic_huo.svg'))
+                    .width(10)
+                    .fillColor('#fff')
+
+                  Text('10')
+                    .fontSize(12)
+                    .fontColor('#fff')
+
+                }
+                .padding(4)
+                .borderRadius(4)
+                .linearGradient({
+                  direction: GradientDirection.Left,
+                  colors: [['#FF856E', 0.1], ['#FF902A', 1.0]]
+                })
+
+                //中央文字区域 评分和评论
+                Text('4.5分 1.8w条点评')
+                  .fontSize(12)
+                  .fontColor('rgba(102, 102, 102, 1)')
+                  .fontWeight(400)
+
+                //右侧文字
+                Text('¥308起')
+                  .fontSize(12)
+                  .fontColor('rgba(102, 102, 102, 1)')
+                  .fontWeight(400)
+
+
+              }
+              .width('100%')
+              .justifyContent(FlexAlign.Start)
+
+
+              //上榜理由
+              Flex({ direction: FlexDirection.Row, wrap: FlexWrap.Wrap }) {
+
+                Image($rawfile('dianzan.png'))
+                  .width(16)
+                  .translate({ y: -2 })
+
+                Text('上榜理由:')
+                  .fontSize(13)
+                  .fontWeight(600)
+                  .fontColor('#5f2b0e')
+
+                Text('这个冬天来环球影')
+                  .fontColor('#5f2b0e')
+                  .fontSize(13)
+
+                Text('城，一起沉浸在冬日独有的浪漫，漫步在雪花飞舞的雪天，创造专属于')
+                  .fontColor('#5f2b0e')
+                  .fontSize(13)
+                  .maxLines(2)
+                  .textOverflow({ overflow: TextOverflow.Ellipsis })
+
+              }
+              .width(216)
+              .height(72)
+              .backgroundColor('rgba(255, 247, 241, 1)')
+              .padding({
+                top: 8,
+                left: 8,
+                right: 9,
+                bottom: 10
+              })
+              .borderRadius(5)
+
+
+              //小标签行
+              Row({ space: 4 }) {
+
+                Row() {
+                  Text('嗨玩乐园')
+                    .fontSize(10)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                }
+                .width(48)
+                .height(17)
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+
+                Row() {
+                  Text('游乐园')
+                    .fontSize(10)
+                    .fontColor('rgba(153, 174, 202, 1)')
+                }
+                .width(38)
+                .height(17)
+                .border({
+                  width: 1,
+                  style: BorderStyle.Solid,
+                  color: 'rgba(153, 174, 202, 1)',
+                  radius: 4
+                })
+                .justifyContent(FlexAlign.Center)
+
+              }
+              .width('100%')
+
+
+              //地点 距离行
+              Row({ space: 1 }) {
+
+                Image($rawfile('daohang.svg'))
+                  .height(14)
+                  .fillColor('rgba(153, 153, 153, 1)')
+
+                Text('北京 · 果园环岛/通州区   距您36.7km')
+                  .fontSize(12)
+                  .fontColor('rgba(153, 153, 153, 1)')
+
+              }
+              .width('100%')
+              .height(16)
+
+            }
+            .width(216)
+            .height(175)
+
+          }
+          .backgroundColor('rgba(255, 255, 255, 1)')
+          .shadow({
+            color: 'rgba(0, 0, 0, 0.1)',
+            offsetY: 2,
+            offsetX: 0,
+            radius: 20
+          })
+          .width(336)
+          .height(199)
+          .margin({ top: 12 })
+        }
+
+
       }
-      .scrollable(ScrollDirection.Vertical)
-      .scrollBar(BarState.Off)
+      .listDirection(Axis.Vertical)
       .width('100%')
+      .height(325)
+      .alignListItem(ListItemAlign.Center)
 
     }
     .width(360)
