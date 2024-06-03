@@ -66,7 +66,7 @@ struct Index {
         .position({ x: '100%', y: 120 })
         .translate({ x: -54 })
 
-        //金边
+        //金边图片
         Image($rawfile('banner_line.png'))
           .width('100%')
           .position({y:250})
