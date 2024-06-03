@@ -66,10 +66,15 @@ struct Index {
         .position({ x: '100%', y: 120 })
         .translate({ x: -54 })
 
+        //金边
+        Image($rawfile('banner_line.png'))
+          .width('100%')
+          .position({y:250})
+
       }
       .backgroundImage($rawfile('banner.png'))
       .width('100%')
-      .height(310)
+      .height(300)
       .backgroundImageSize({width:'100%'})
 
 
