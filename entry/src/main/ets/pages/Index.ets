@@ -971,7 +971,7 @@ struct Index {
       }
       .listDirection(Axis.Vertical)
       .width('100%')
-      .height(430)
+      .height(390)
       .alignListItem(ListItemAlign.Center)
 
     }
