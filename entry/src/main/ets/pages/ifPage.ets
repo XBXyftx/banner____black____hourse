@@ -1,18 +1,18 @@
 @Entry
 @Component
 struct ifpage{
-  @State fleg:boolean=true
+  @State flag:boolean=true
   build(){
     Column(){
       Button('按')
         .onClick(()=>{
-          if(this.fleg==true){
-            this.fleg=false
+          if(this.flag==true){
+            this.flag=false
           }else {
-            this.fleg=true
+            this.flag=true
           }
         })
-      if (this.fleg){
+      if (this.flag){
         Text('这是true')
           .fontColor(Color.Red)
           .fontSize(40)
